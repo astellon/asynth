@@ -53,48 +53,4 @@ class Voice : public Module {
   int sample_ofset_;
   bool activity_;
 };
-
-/*==============================================================================
-VoiceHandler class.
-==============================================================================*/
-class VoiceHandler : public Module {
-
- public:
-  enum VoiceHandlerOutput {
-    voice_handler_output_L,
-    voice_handler_output_R,
-    voice_handler_num_outputs,
-  };
-
-  enum VoiceHandlerInput {
-    voice_handler_num_inputs,
-  };
-
-  enum VoiceHandlerParams {
-    voice_handler_num_params,
-  };
-
-  explicit VoiceHandler(int num_voice = DEFAULT_NUM_HARMONIES);
-  ~VoiceHandler();
-
-  void setPlayer(double sample_rate, int buffer_size) override;
-
-  int getNumVoice() const { return num_voice_; }
-  void resizeVoice(int num_voice);
-  void clearVoice();
-
-  void noteOn(int note, int velocity, int sample_ofset);
-  void noteOff(int note, int sample_ofset);
-  void allNoteOff(int sample_ofset);
-
-  void process();
-
- private:
-  void inactivateVoice();
-  int num_voice_;
-  std::list<Voice*> all_voices_;
-  std::list<Voice*> active_voices_;
-  std::list<Voice*> inactive_voices_;
-};
-// ==============================================================================
 }  // namespace synth

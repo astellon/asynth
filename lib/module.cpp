@@ -123,7 +123,7 @@ void Input::connect(Output* output) { source_ = output; }
 
 void Input::disconnect() { source_ = nullptr; }
 
-Output* Input::getSource() const { return source_; }
+const Output* Input::getSource() const { return source_; }
 
 bool Input::hasSource() const { return source_ == nullptr; }
 

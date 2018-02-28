@@ -2,6 +2,7 @@
 
 #include "module.h"
 #include "voice.h"
+#include "voice_handler.h"
 
 namespace astellon {
 
@@ -25,7 +26,7 @@ class Synthesizer : public Module {
   void process();
 
  private:
-  VoiceHandler voice_handler_;
+  VoiceHandler<Voice> voice_handler_;
 };
 
 }  // namespace synth

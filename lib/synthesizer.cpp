@@ -35,5 +35,4 @@ void Synthesizer::process() {
   *outputs_[0] = *(voice_handler_.getOutput(0));
   *outputs_[1] = *(voice_handler_.getOutput(1));
 }
-
 }

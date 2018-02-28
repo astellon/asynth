@@ -31,6 +31,7 @@
       <FILE id="FNB9kI" name="test.cpp" compile="1" resource="0" file="lib/test.cpp"/>
       <FILE id="EfFm9w" name="voice.cpp" compile="1" resource="0" file="lib/voice.cpp"/>
       <FILE id="ZCVVvG" name="voice.h" compile="0" resource="0" file="lib/voice.h"/>
+      <FILE id="TBisWI" name="voice_handler.h" compile="0" resource="0" file="lib/voice_handler.h"/>
     </GROUP>
   </MAINGROUP>
   <EXPORTFORMATS>

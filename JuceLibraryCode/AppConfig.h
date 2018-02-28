@@ -325,7 +325,7 @@
  #define JucePlugin_ManufacturerCode       0x4d616e75 // 'Manu'
 #endif
 #ifndef  JucePlugin_PluginCode
- #define JucePlugin_PluginCode             0x5434627a // 'T4bz'
+ #define JucePlugin_PluginCode             0x4f6e6f66 // 'Onof'
 #endif
 #ifndef  JucePlugin_IsSynth
  #define JucePlugin_IsSynth                1

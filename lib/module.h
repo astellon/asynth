@@ -55,7 +55,7 @@ class Input {
   void connect(Output* output);
   void disconnect();
 
-  Output* getSource() const;
+  const Output* getSource() const;
   bool hasSource() const;
 
   const AudioType input(int index) const;
